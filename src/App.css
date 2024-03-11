@@ -1,0 +1,69 @@
+
+
+.resizable-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.resizable-component {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+}
+
+.resize-handle:hover {
+  background-color: #666;
+}
+
+.containers {
+  display: flex;
+}
+
+.place1 {
+  margin-left: 200px;
+}
+
+.place2 {
+  margin-left: 400px;
+}
+
+.box {
+  margin-left: 200px;
+  margin-top: 620px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .resizable-wrapper {
+    width: 80%;
+    height: 80%;
+  }
+
+  .place1,
+  .place2 {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .resizable-wrapper {
+    width: 90%;
+    height: 90%;
+  }
+
+  .place1,
+  .place2 {
+    margin-left: 5%; 
+  }
+}
